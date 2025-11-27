@@ -1,0 +1,22 @@
+POST http://127.0.0.1:8000/api/token/
+Content-Type: application/json
+
+{
+  "username": "aaa",
+  "password": "aaa"
+}
+
+###
+
+
+GET http://127.0.0.1:8000/task/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYyODAzNTY5LCJpYXQiOjE3NjI4MDMyNjksImp0aSI6ImNhN2QxODI4MzUyODQzMTQ4NTllOWUxMzE4MzM3OWI4IiwidXNlcl9pZCI6IjEifQ.8DlGqcNa83P5wG54-8tmUUQDU68im83mQfrwEIwTmt0
+###
+PATCH http://127.0.0.1:8000/task/3/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYyODAzODk5LCJpYXQiOjE3NjI4MDM1OTksImp0aSI6ImQxYzQ5MmFiZjhlZjRkMDJhMGY0NjVmNjRjZDkzMDllIiwidXNlcl9pZCI6IjEifQ.HU_8ggSNGpH3XRSbHQ6z5Ji2n6DfVOX0kocUCgL1Emg
+Content-Type: application/json
+
+{
+  "title": "sex",
+  "complete": true
+}
