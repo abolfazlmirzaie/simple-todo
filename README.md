@@ -10,8 +10,8 @@ It supports user authentication (JWT + Session), CRUD operations for tasks, and 
 1. Make sure you have **Docker** and **Docker Compose** installed.
 2. Clone this repository and go to the project folder:
    ```bash
-   git clone <your-repo-url>
-   cd <your-project-folder>
+   git clone https://github.com/abolfazlmirzaie/simple-todo/tree/master
+   cd todo
 
    ## Build and start the containers:
    docker-compose up --build
