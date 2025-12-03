@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'to_do',
-    'drf_spectacular'
+    'drf_spectacular',
+
 
 ]
 
@@ -152,3 +153,19 @@ SPECTACULAR_SETTINGS = {
 BANNED_IPS = [
 
 ]
+
+CELERY_BROKER_URL = "redis://redis:6379/0"
+CELERY_RESULT_BACKEND = "redis://redis:6379/0"
+
+
+
+
+
+from datetime import timedelta
+
+CELERY_BEAT_SCHEDULE = {
+    "print-hello-every-10-seconds": {
+        "task": "to_do.tasks.say_hello",
+        "schedule": timedelta(seconds=10),
+    },
+}
