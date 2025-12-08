@@ -25,10 +25,10 @@ urlpatterns = [
     path('api/token/refresh',TokenRefreshView.as_view(),name='token_refresh_pair'),
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
 
-    # نمایش Swagger UI
+    #  Swagger UI
     path('api/schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
 
-    # نمایش Redoc
+    #  Redoc
     path('api/schema/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
 
 ]
